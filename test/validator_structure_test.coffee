@@ -1,7 +1,7 @@
-h          = require("./helper.coffee")
-CValidator = h.validator
+h         = require("./helper.coffee")
+validator = h.validator
 
 describe "PresenceValidator", ->
   describe "instanceof", ->
     it "check for CreditCardValidator factory", ->
-      expect(typeof CValidator()).eq("object")
+      expect(typeof validator()).eq("object")
