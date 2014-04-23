@@ -27,6 +27,7 @@
     "barriertest": "~0.4.1"
   },
   "dependencies": {
-    "sinon": "~1.9.1"
+    "sinon": "~1.9.1",
+    "composed-validations": "~0.4.0"
   }
 }
