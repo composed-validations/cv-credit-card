@@ -7,7 +7,7 @@ module.exports =
   validator: validator
   defaultErrorMessage: errorMessage
   testOk: (number) ->
-    expect((-> validator.test(number))).not.throw()
+    expect((-> validator({}).test(number))).not.throw()
 
   testFail: (number) ->
-    expect(-> validator.test(number)).throw(errorMessage)
+    expect(-> validator({}).test(number)).throw(errorMessage)
