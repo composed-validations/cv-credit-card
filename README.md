@@ -4,9 +4,11 @@ This is a custom validator (or plugin) for the composed validations library.
 
 This is also a simple and useful repository to use as a example on how to create custom validators for the composed validations library.
 
+# Installation
+
+# How to Use
 
 # Available Validations
-
 * American Express
 * VISA
 * VISA Commercial Card
@@ -21,6 +23,12 @@ This is also a simple and useful repository to use as a example on how to create
 * Discover Diners
 * JCB (Soon)
 
+# Goals
+* Number validation
+* Add ```accepts``` option for accepted cards
+* Add individual regex for each card (remove generic one)
+* Split each card regex in a separated lib/spec
+
 # Credit Card Test Numbers
 We used this table: [https://www.auricsystems.com/support-center/sample-credit-card-numbers/](https://www.auricsystems.com/support-center/sample-credit-card-numbers/)
 
@@ -34,4 +42,4 @@ We used this table: [https://www.auricsystems.com/support-center/sample-credit-c
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+[MIT License](http://djalmaaraujo.mit-license.org)
