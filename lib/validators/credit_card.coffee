@@ -4,4 +4,4 @@ module.exports = (cv) ->
   (options) ->
     test: (value) ->
       unless CREDIT_CARD_REGEX.test(value)
-        throw new cv.ValidationError("credit card number is not valid", value, this)
+        throw new cv.ValidationError("typed is not a valid credit card", value, this)

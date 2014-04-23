@@ -1,6 +1,6 @@
 composedLib = require('composed-validations')
 validator   = require("../lib/validators/credit_card.coffee")(composedLib)
-errorMessage = "credit card number is not valid"
+errorMessage = "typed is not a valid credit card"
 
 module.exports =
   ValidationError: composedLib.ValidationError
