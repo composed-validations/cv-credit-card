@@ -2,7 +2,7 @@
   "name": "credit-card-composed-validator",
   "version": "0.0.1",
   "description": "A custom validator for Composed Validatios Library",
-  "main": "lib/credit-card.js",
+  "main": "index.js",
   "scripts": {
     "test": "barrier"
   },
@@ -25,5 +25,8 @@
   "homepage": "https://github.com/djalmaaraujo/credit-card-composed-validator",
   "devDependencies": {
     "barriertest": "~0.4.1"
+  },
+  "dependencies": {
+    "sinon": "~1.9.1"
   }
 }
