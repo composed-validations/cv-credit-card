@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/djalmaaraujo/credit-card-composed-validator/issues"
   },
-  "homepage": "https://github.com/djalmaaraujo/credit-card-composed-validator"
+  "homepage": "https://github.com/djalmaaraujo/credit-card-composed-validator",
+  "devDependencies": {
+    "barriertest": "~0.4.1"
+  }
 }
