@@ -12,8 +12,8 @@ This is also a simple and useful repository to use as a example on how to create
 * American Express
 * VISA
 * VISA Commercial Card
-* Cisa Corporate Card II
-* Cisa Corporate Card III
+* VISA Corporate Card II
+* VISA Corporate Card III
 * Mastercard
 * MasterCard Diners
 * MasterCard II
@@ -22,6 +22,11 @@ This is also a simple and useful repository to use as a example on how to create
 * Discover Network
 * Discover Diners
 * JCB
+* Switch/Solo (Paymentech)
+* Union
+* Laser
+* Dankort
+* Insta Payment
 
 # Goals
 * ~~Number validation~~
