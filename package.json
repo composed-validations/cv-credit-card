@@ -1,0 +1,26 @@
+{
+  "name": "credit-card-composed-validator",
+  "version": "0.0.1",
+  "description": "A custom validator for Composed Validatios Library",
+  "main": "lib/credit-card.js",
+  "scripts": {
+    "test": "barrier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:djalmaaraujo/credit-card-composed-validator.git"
+  },
+  "keywords": [
+    "composed",
+    "validations",
+    "credit",
+    "card",
+    "validator"
+  ],
+  "author": "Djalma Araujo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djalmaaraujo/credit-card-composed-validator/issues"
+  },
+  "homepage": "https://github.com/djalmaaraujo/credit-card-composed-validator"
+}
