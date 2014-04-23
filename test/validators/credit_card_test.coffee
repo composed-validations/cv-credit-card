@@ -9,3 +9,9 @@ describe "Credit Cards tests", ->
       expect(-> CValidator({}).test("abc")).throw(message)
       expect(-> CValidator({}).test("hello")).throw(message)
       expect(-> CValidator({}).test("dude")).throw(message)
+
+  describe "Good tests", ->
+    it "should pass and return value", ->
+      card = "4444444444444448" # using a VISA example
+
+      expect(CValidator({}).test(card)).eq card
