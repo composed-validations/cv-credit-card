@@ -4,7 +4,7 @@
   "description": "A custom validator for Composed Validatios Library",
   "main": "index.js",
   "scripts": {
-    "test": "barrier"
+    "test": "./node_modules/.bin/barrier $(find test -name '*_test.coffee')"
   },
   "repository": {
     "type": "git",
