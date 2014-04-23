@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "A custom validator for Composed Validatios Library",
   "main": "index.js",
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  },
+  "browser": "lib/index.coffee",
   "scripts": {
     "test": "./node_modules/.bin/barrier $(find test -name '*_test.coffee')"
   },
@@ -26,5 +32,8 @@
   "devDependencies": {
     "barriertest": "~0.4.1",
     "composed-validations": "~0.4.0"
+  },
+  "dependencies": {
+    "coffee-script": "~1.7.1"
   }
 }
