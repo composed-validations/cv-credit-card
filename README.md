@@ -21,7 +21,7 @@ This is also a simple and useful repository to use as a example on how to create
 * Diners Club
 * Discover Network
 * Discover Diners
-* JCB (Soon)
+* JCB
 
 # Goals
 * Number validation
