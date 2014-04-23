@@ -24,10 +24,12 @@ This is also a simple and useful repository to use as a example on how to create
 * JCB
 
 # Goals
-* Number validation
+* ~~Number validation~~
+* ~~Add possibility to pass options~~
 * Add ```accepts``` option for accepted cards
 * Add individual regex for each card (remove generic one)
-* Split each card regex in a separated lib/spec
+* Split each card regex in a separated lib
+* ~~Split each card regex in a separated spec~~
 
 # Credit Card Test Numbers
 We used this table: [https://www.auricsystems.com/support-center/sample-credit-card-numbers/](https://www.auricsystems.com/support-center/sample-credit-card-numbers/)

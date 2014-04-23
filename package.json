@@ -1,5 +1,5 @@
 {
-  "name": "credit-card-composed-validator",
+  "name": "cv-credit-card",
   "version": "0.0.1",
   "description": "A custom validator for Composed Validatios Library",
   "main": "index.js",
@@ -26,8 +26,5 @@
   "devDependencies": {
     "barriertest": "~0.4.1",
     "composed-validations": "~0.4.0"
-  },
-  "dependencies": {
-    "sinon": "~1.9.1"
   }
 }
