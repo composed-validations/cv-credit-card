@@ -1,4 +1,7 @@
-# Credit Card Composed Validator
+Credit Card Composed Validator
+==============================
+
+[![Build Status](https://drone.io/github.com/djalmaaraujo/credit-card-composed-validator/status.png)](https://drone.io/github.com/djalmaaraujo/credit-card-composed-validator/latest)
 
 This is a custom validator (or plugin) for the composed validations library.
 
