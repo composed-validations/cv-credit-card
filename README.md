@@ -5,10 +5,26 @@ This is a custom validator (or plugin) for the composed validations library.
 This is also a simple and useful repository to use as a example on how to create custom validators for the composed validations library.
 
 # Installation
+```
+npm install cv-credit-card
+```
 
 # How to Use
+```javascript
+var validations = require('composed-validations');
+var ccValidator = require('cv-credit-card')(validations);
 
-# Available Validations
+// You don't need to pass the accepts option, it's optional. If you don't pass, will accept 18 types of validation. See the Available Validations below
+
+var validator = ccValidator({options: {accepts: ['visa']}})
+
+validator.test("4444444444444448") // will return 4444444444444448
+
+validator.test("6331101999990016") // false (this is a switch card test number)
+
+```
+
+# Available Credit Card Validations (18)
 * American Express
 * VISA
 * VISA Commercial Card
