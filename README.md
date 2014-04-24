@@ -14,7 +14,9 @@ npm install cv-credit-card
 var validations = require('composed-validations');
 var ccValidator = require('cv-credit-card')(validations);
 
-// You don't need to pass the accepts option, it's optional. If you don't pass, will accept 18 types of validation. See the Available Validations below
+// The accepts option is optional.
+// If you don't pass, will accept 18 types of validation.
+// See the Available Validations below
 
 var validator = ccValidator({options: {accepts: ['visa']}})
 
