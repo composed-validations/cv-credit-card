@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Credit Card Composed Validator Plugin by djalmaaraujo</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Credit Card Composed Validator Plugin</h1>
+        <p>A complete custom validator plugin for the composed validations library. Supporting +17 credit card types</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/djalmaaraujo/credit-card-composed-validator" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/djalmaaraujo/credit-card-composed-validator/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/djalmaaraujo/credit-card-composed-validator/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a name="credit-card-composed-validator" class="anchor" href="#credit-card-composed-validator"><span class="octicon octicon-link"></span></a>Credit Card Composed Validator</h1>
+
+<p>This is a custom validator (or plugin) for the composed validations library.</p>
+
+<p>This is also a simple and useful repository to use as a example on how to create custom validators for the composed validations library.</p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<pre><code>npm install cv-credit-card
+</code></pre>
+
+<h1>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to Use</h1>
+
+<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">validations</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'composed-validations'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">ccValidator</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'cv-credit-card'</span><span class="p">)(</span><span class="nx">validations</span><span class="p">);</span>
+
+<span class="c1">// The accepts option is optional.</span>
+<span class="c1">// If you don't pass, will accept 18 types of validation.</span>
+<span class="c1">// See the Available Validations below</span>
+
+<span class="kd">var</span> <span class="nx">validator</span> <span class="o">=</span> <span class="nx">ccValidator</span><span class="p">({</span><span class="nx">options</span><span class="o">:</span> <span class="p">{</span><span class="nx">accepts</span><span class="o">:</span> <span class="p">[</span><span class="s1">'visa'</span><span class="p">]}})</span>
+
+<span class="nx">validator</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">"4444444444444448"</span><span class="p">)</span> <span class="c1">// will return 4444444444444448</span>
+
+<span class="nx">validator</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">"6331101999990016"</span><span class="p">)</span> <span class="c1">// false (this is a switch card test number)</span>
+
+</pre></div>
+
+<h1>
+<a name="available-credit-card-validations-18" class="anchor" href="#available-credit-card-validations-18"><span class="octicon octicon-link"></span></a>Available Credit Card Validations (18)</h1>
+
+<ul>
+<li>American Express</li>
+<li>VISA</li>
+<li>VISA Commercial Card</li>
+<li>VISA Corporate Card II</li>
+<li>VISA Corporate Card III</li>
+<li>Mastercard</li>
+<li>MasterCard Diners</li>
+<li>MasterCard II</li>
+<li>MasterCard III</li>
+<li>Diners Club</li>
+<li>Discover Network</li>
+<li>Discover Diners</li>
+<li>JCB</li>
+<li>Switch/Solo (Paymentech)</li>
+<li>Union</li>
+<li>Laser</li>
+<li>Dankort</li>
+<li>Insta Payment</li>
+</ul><h1>
+<a name="credit-card-test-numbers" class="anchor" href="#credit-card-test-numbers"><span class="octicon octicon-link"></span></a>Credit Card Test Numbers</h1>
+
+<ul>
+<li><a href="https://www.auricsystems.com/support-center/sample-credit-card-numbers/">https://www.auricsystems.com/support-center/sample-credit-card-numbers/</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Credit_card_numbers">http://en.wikipedia.org/wiki/Credit_card_numbers</a></li>
+<li><a href="http://www.worldpay.com/support/kb/bg/testandgolive/tgl5103.html">http://www.worldpay.com/support/kb/bg/testandgolive/tgl5103.html</a></li>
+<li><a href="http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm">http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm</a></li>
+</ul><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code>
+</li>
+<li>Commit your changes: <code>git commit -m 'Add some feature'</code>
+</li>
+<li>Push to the branch: <code>git push origin my-new-feature</code>
+</li>
+<li>Submit a pull request :D</li>
+</ol><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://djalmaaraujo.mit-license.org">MIT License</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/djalmaaraujo">djalmaaraujo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
