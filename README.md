@@ -29,7 +29,11 @@ This is also a simple and useful repository to use as a example on how to create
 * Insta Payment
 
 # Credit Card Test Numbers
-We used this table: [https://www.auricsystems.com/support-center/sample-credit-card-numbers/](https://www.auricsystems.com/support-center/sample-credit-card-numbers/)
+* [https://www.auricsystems.com/support-center/sample-credit-card-numbers/](https://www.auricsystems.com/support-center/sample-credit-card-numbers/)
+* [http://en.wikipedia.org/wiki/Credit_card_numbers](http://en.wikipedia.org/wiki/Credit_card_numbers)
+* [http://www.worldpay.com/support/kb/bg/testandgolive/tgl5103.html](http://www.worldpay.com/support/kb/bg/testandgolive/tgl5103.html)
+* [http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm](http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm)
+
 
 ## Contributing
 
