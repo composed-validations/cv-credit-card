@@ -1,46 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Credit Card Composed Validator Plugin by djalmaaraujo</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <title>Credit Card Composed Validator Plugin by djalmaaraujo</title>
   </head>
+
   <body>
+    <div id="container">
+      <div class="inner">
 
-      <header>
-        <h1>Credit Card Composed Validator Plugin</h1>
-        <p>A complete custom validator plugin for the composed validations library. Supporting +17 credit card types</p>
-      </header>
+        <header>
+          <h1>Credit Card Composed Validator Plugin</h1>
+          <h2>A complete custom validator plugin for the composed validations library. Supporting +17 credit card types</h2>
+        </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/djalmaaraujo/credit-card-composed-validator/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/djalmaaraujo/credit-card-composed-validator/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/djalmaaraujo/credit-card-composed-validator" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <a href="https://github.com/djalmaaraujo/credit-card-composed-validator" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/djalmaaraujo/credit-card-composed-validator/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/djalmaaraujo/credit-card-composed-validator/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+        <hr>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
+        <section id="main_content">
+          <h1>
 <a name="credit-card-composed-validator" class="anchor" href="#credit-card-composed-validator"><span class="octicon octicon-link"></span></a>Credit Card Composed Validator</h1>
+
+<p><a href="https://drone.io/github.com/djalmaaraujo/credit-card-composed-validator/latest"><img src="https://drone.io/github.com/djalmaaraujo/credit-card-composed-validator/status.png" alt="Build Status"></a></p>
 
 <p>This is a custom validator (or plugin) for the composed validations library.</p>
 
@@ -62,11 +56,11 @@
 <span class="c1">// If you don't pass, will accept 18 types of validation.</span>
 <span class="c1">// See the Available Validations below</span>
 
-<span class="kd">var</span> <span class="nx">validator</span> <span class="o">=</span> <span class="nx">ccValidator</span><span class="p">({</span><span class="nx">options</span><span class="o">:</span> <span class="p">{</span><span class="nx">accepts</span><span class="o">:</span> <span class="p">[</span><span class="s1">'visa'</span><span class="p">]}})</span>
+<span class="kd">var</span> <span class="nx">validator</span> <span class="o">=</span> <span class="nx">ccValidator</span><span class="p">({</span><span class="nx">accepts</span><span class="o">:</span> <span class="p">[</span><span class="s1">'visa'</span><span class="p">]});</span>
 
-<span class="nx">validator</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">"4444444444444448"</span><span class="p">)</span> <span class="c1">// will return 4444444444444448</span>
+<span class="nx">validator</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">"4444444444444448"</span><span class="p">);</span> <span class="c1">// will return 4444444444444448</span>
 
-<span class="nx">validator</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">"6331101999990016"</span><span class="p">)</span> <span class="c1">// false (this is a switch card test number)</span>
+<span class="nx">validator</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">"6331101999990016"</span><span class="p">);</span> <span class="c1">// false (this is a switch card test number)</span>
 
 </pre></div>
 
@@ -116,13 +110,15 @@
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p><a href="http://djalmaaraujo.mit-license.org">MIT License</a></p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/djalmaaraujo">djalmaaraujo</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
+        </section>
+
+        <footer>
+          Credit Card Composed Validator Plugin is maintained by <a href="https://github.com/djalmaaraujo">djalmaaraujo</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
