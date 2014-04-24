@@ -21,11 +21,11 @@ var ccValidator = require('cv-credit-card')(validations);
 // If you don't pass, will accept 18 types of validation.
 // See the Available Validations below
 
-var validator = ccValidator({options: {accepts: ['visa']}})
+var validator = ccValidator({accepts: ['visa']});
 
-validator.test("4444444444444448") // will return 4444444444444448
+validator.test("4444444444444448"); // will return 4444444444444448
 
-validator.test("6331101999990016") // false (this is a switch card test number)
+validator.test("6331101999990016"); // false (this is a switch card test number)
 
 ```
 
