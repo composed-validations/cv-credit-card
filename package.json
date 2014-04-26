@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:djalmaaraujo/credit-card-composed-validator.git"
+    "url": "git@github.com:composed-validations/cv-credit-card.git"
   },
   "keywords": [
     "composed",
@@ -26,9 +26,9 @@
   "author": "Djalma Araujo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/djalmaaraujo/credit-card-composed-validator/issues"
+    "url": "https://github.com/composed-validations/cv-credit-card/issues"
   },
-  "homepage": "https://github.com/djalmaaraujo/credit-card-composed-validator",
+  "homepage": "https://github.com/composed-validations/cv-credit-card",
   "devDependencies": {
     "barriertest": "~0.4.1",
     "composed-validations": "~0.7.1"
