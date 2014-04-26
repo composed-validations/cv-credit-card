@@ -31,7 +31,7 @@
   "homepage": "https://github.com/djalmaaraujo/credit-card-composed-validator",
   "devDependencies": {
     "barriertest": "~0.4.1",
-    "composed-validations": "~0.4.0"
+    "composed-validations": "~0.7.1"
   },
   "dependencies": {
     "coffee-script": "~1.7.1"

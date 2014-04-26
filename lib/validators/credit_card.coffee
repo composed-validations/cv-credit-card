@@ -14,4 +14,4 @@ module.exports = (cv) ->
         else
           return value  if isValidCard(regex, value)
 
-      throw new cv.ValidationError("is not an accepted credit card number", value, this)
+      throw cv.error("is not an accepted credit card number", value, this)
