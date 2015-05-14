@@ -29,7 +29,7 @@ validator.test("6331101999990016"); // false (this is a switch card test number)
 
 ```
 
-# Available Credit Card Validations (18)
+# Available Credit Card Validations (20)
 * American Express
 * VISA
 * VISA Commercial Card
