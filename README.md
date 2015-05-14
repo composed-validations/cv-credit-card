@@ -48,6 +48,8 @@ validator.test("6331101999990016"); // false (this is a switch card test number)
 * Laser
 * Dankort
 * Insta Payment
+* Elo (New)
+* Hipercard (New)
 
 # Credit Card Test Numbers
 * [https://www.auricsystems.com/support-center/sample-credit-card-numbers/](https://www.auricsystems.com/support-center/sample-credit-card-numbers/)
