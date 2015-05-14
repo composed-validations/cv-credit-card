@@ -29,7 +29,7 @@ validator.test("6331101999990016"); // false (this is a switch card test number)
 
 ```
 
-# Available Credit Card Validations (20)
+# Available Credit Card Validations (21)
 * American Express
 * VISA
 * VISA Commercial Card
@@ -50,6 +50,7 @@ validator.test("6331101999990016"); // false (this is a switch card test number)
 * Insta Payment
 * Elo (New)
 * Hipercard (New)
+* Aura (New)
 
 # Credit Card Test Numbers
 * [https://www.auricsystems.com/support-center/sample-credit-card-numbers/](https://www.auricsystems.com/support-center/sample-credit-card-numbers/)
